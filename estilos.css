@@ -1,0 +1,241 @@
+:root{
+    --back:linear-gradient(to left top, white,rgb(255 120 56) );
+    --cont:80%;
+}
+@font-face {
+    font-family: infantil;
+    src: url('Glossy Sheen Shine DEMO.ttf');
+}
+@font-face {
+    font-family: Titulo;
+    src: url("Good Morning.ttf");
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    width: 100%;
+    background-color: white;
+    align-self: flex-start;
+}
+header nav{
+    background-color: rgb(255 120 56);
+}
+header nav ul{
+    list-style: none;
+    display: inline-flex;
+    padding: 20px;
+    
+}
+header nav ul li a{
+    padding: 20px;
+    text-decoration: none;
+    color: black;
+}
+.showcase{
+    background: url('https://fondosmil.com/fondo/46279.jpg');
+    background-position: 100%;
+    background-size: 100%;
+    width: 100%;
+    min-height: 400px;
+}
+.showcase .showcase-back{
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 100%;
+    
+    color: white;
+}
+.showcase .showcase-back .showcase-content{
+    width: var(--cont);
+    display: flex;
+    margin: auto;
+}
+.showcase-content .showcase-prin{
+    font-size: 21px;
+    text-align: justify;
+}
+.showcase-content .showcase-side{
+    background-color: white;
+    border-radius: 20px;
+    border: outset black 2px;
+}
+.showcase-content .showcase-prin, .showcase-content .showcase-side{
+    width: 50%;
+    margin: 5px;
+}
+.pat{
+    padding: 15px;
+    font-family:Titulo;
+    font-size: 20px;
+    color: aqua;
+    background-color: black;
+}
+.trip-med{
+    width: 80%;
+    margin: auto;
+    display: flex
+}
+.trip-med .intro{
+    width: 50%;
+    border: dashed black 4px;
+    background-color: rgb(113, 255, 184);
+    text-align: justify;
+    margin: 5px;
+    border-radius: 30px;
+}
+.intro p, .side p{
+    padding: 10px;
+    
+    
+}
+.trip-med .side{
+    border-radius: 20px;
+    width: 30%;
+    margin: 5px;
+    border: 2px solid black;
+    background-color: white;
+}
+body{
+    height: 100%;
+    width: 100%;
+    background: var(--back);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 100%;
+    font-family: Arial;
+}
+main{
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+}
+.cont-img{
+    width: var(--cont);
+    margin: auto;
+    
+}
+.contenedor{
+    display: flex;
+}
+.tit-i{
+    width: 100%;
+    text-align: center;
+    padding: 8px;
+}
+.tit-i{
+    width: var(--back);
+    margin: auto;
+}
+.img-p{
+    width: 33%;
+    height: 400px;
+    background-position: 100%;
+    background-size: 100%;
+    margin: 4px;
+    box-shadow: 0 0 10px black;
+    border-radius: 20px;
+}
+.login{
+    margin: 200px auto;
+    height: 50%;
+    width: 30%;
+    border-radius: 30px;
+    border: dashed black 4px;
+    background-color: rgba(255, 255, 255, 0.973);
+    box-shadow: 30px 10px 0 10px black;
+}
+.login form{
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.form-g{
+    width: 100%;
+    margin-top: 10px;
+}
+.form-g input{
+    width: 100%;
+    border-radius: 10px;
+    border: solid black 2px;
+    height: 40px;
+    padding: 4px;
+    transition: 300ms all ease;
+}
+input[type =submit]:hover{
+    cursor: pointer;
+    animation-name: animas;
+    animation-duration:800ms;
+    background-color: red;
+    color: white;
+}
+.title-lo{
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(248, 129, 17);
+}
+.title-log{
+    font-family: infantil;
+    font-size: 30px;
+    text-align: center;
+    padding: 10px;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    background-color: rgb(26, 255, 0);
+}
+.show-rect{
+    width: 100%;
+    height: 600px;
+    margin-top: 30px;
+    background: url('https://a-static.besthdwallpaper.com/night-scenery-forest-wallpaper-3840x2160-80900_54.jpg');
+    background-position: 100%;
+    background-size: 100%;
+    box-shadow: 0 0 10px black;
+}
+.show-rect .content-rect{
+    width: 50%;
+    margin: 50px auto;
+    background-color: white;
+    border-radius: 20px;
+    padding: 15px;
+    transition: 300ms all ease;
+}
+footer{
+    background-color: black;
+    padding: 20px;
+    color: white;
+    box-shadow: 0 0 10px black;
+    align-self: flex-end;
+    margin-top: 10px;
+}
+footer .foot-p{
+    width: 50%;
+    margin: 10px;
+}
+footer .cont-f{
+    display: flex;
+    width: 80%;
+    text-align: justify;
+    margin: auto;
+}
+@keyframes animas{
+    20%{
+        background:linear-gradient(to right, red 20%,white 10% );
+    }
+    40%{
+        background:linear-gradient(to right, red 40%,white 20% );
+    }
+    60%{
+        background:linear-gradient(to right, red 60%,white 40% );
+    }
+    80%{
+        background:linear-gradient(to right, red 80%,white 60% );
+    }
+    100%{
+        border: none;
+        background-color: red;
+    }
+}

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos.css">
+
+</head>
+<body>
+    <header>
+        <div class="pat">
+           NINTRO
+        </div>
+        <nav>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Home</a></li>
+                <li><a href="">Home</a></li>
+                <li><a href="">Home</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="showcase">
+            <div class="showcase-back">
+                <div class="showcase-content">
+                    <div class="showcase-prin">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error eos sunt excepturi officiis, doloremque quisquam magnam alias 
+                        voluptatem praesentium facilis. Sunt soluta at,
+                         quo nemo repudiandae quidem maiores eaque reiciendis!Lorem
+                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                          Beatae tempora consectetur tempore eum aliquam illum, neque similique nesciunt provident veniam, quis quasi?
+                          Maxime perferendis animi nesciunt eveniet ducimus libero unde. <br> <br>
+                          <cite>Simon Bolivar</cite>
+                    </div>
+                    <div class="showcase-side">
+                        asd
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="trip-med">
+            <div class="intro">
+                <div class="title-lo">
+                    <h2>LOGIN</h2>
+                </div>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Amet nobis iure quae natus placeat eaque ea neque odio aspernatur illum in,
+                    temporibus eius cum sed doloribus laborum, dolore voluptatibus error!
+                </p>
+            </div>
+            <div class="side">
+                <div class="title-lo">
+                    <h2>LOGIN</h2>
+                </div>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Amet nobis iure quae natus placeat eaque ea neque odio aspernatur illum in,
+                    temporibus eius cum sed doloribus laborum, dolore voluptatibus error!
+                </p>
+            </div>
+            <div class="side">
+                <div class="title-lo">
+                    <h2>LOGIN</h2>
+                </div>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Amet nobis iure quae natus placeat eaque ea neque odio aspernatur illum in,
+                    temporibus eius cum sed doloribus laborum, dolore voluptatibus error!
+                </p>
+            </div>
+        </div>
+        <div class="cont-img">
+            <div class="tit-i">
+                <h2>IMAGENES</h2>
+            </div>
+            <div class="contenedor">
+                <div class="img-p">
+                    
+                </div>
+                <div class="img-p">
+
+                </div>
+                <div class="img-p">
+
+                </div>    
+            </div>
+            
+        </div>
+        <div class="show-rect">
+            <div class="content-rect">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                 Pariatur doloribus iure perspiciatis dignissimos excepturi officiis reprehenderit. Est quia 
+                laboriosam praesentium eligendi accusantium eos ea unde in odio voluptate, tempora facere.
+            </div>
+            <div class="content-rect">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                 Pariatur doloribus iure perspiciatis dignissimos excepturi officiis reprehenderit. Est quia 
+                laboriosam praesentium eligendi accusantium eos ea unde in odio voluptate, tempora facere.
+            </div>
+            <div class="content-rect">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                 Pariatur doloribus iure perspiciatis dignissimos excepturi officiis reprehenderit. Est quia 
+                laboriosam praesentium eligendi accusantium eos ea unde in odio voluptate, tempora facere.
+            </div>
+            <div class="content-rect">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                 Pariatur doloribus iure perspiciatis dignissimos excepturi officiis reprehenderit. Est quia 
+                laboriosam praesentium eligendi accusantium eos ea unde in odio voluptate, tempora facere.
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="cont-f">
+            <div class="foot-p">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                Laboriosam, harum magni adipisci architecto consectetur,
+                 cumque doloremque eos soluta molestias quos exercitationem corrupti consequatur 
+                 inventore nihil beatae? Nesciunt numquam odio ut!
+            </div>
+            <div class="foot-p">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                Laboriosam, harum magni adipisci architecto consectetur,
+                 cumque doloremque eos soluta molestias quos exercitationem corrupti consequatur 
+                 inventore nihil beatae? Nesciunt numquam odio ut!
+            </div>   
+        </div>
+        
+    </footer>
+    <script>
+        (function(){
+            const img = document.getElementsByClassName("img-p")
+            const contenR = document.getElementsByClassName("content-rect")
+            var conten = [...contenR]
+            conten.map((e, i) => {
+                if(i%2 == 0){
+                    e.style.border = "dashed 2px black"
+                }
+                else{
+                    e.style.border = "solid 2px black"    
+                }
+                e.addEventListener("mouseover", function(){
+                    let arr = this.style.border.split(" ")
+                    if(arr[1] == "dashed"){
+                        this.style.border = "2px solid black"
+                    }
+                    else{
+                        this.style.border = "2px dashed black"
+                    }
+                }) 
+            })
+            const imag = ["https://i.pinimg.com/736x/b2/60/2a/b2602abcc595143c9227610be430cfb6.jpg", "pexels-arun-thomas-1156684.jpg", "https://wallpapers.com/images/featured/58g8gv3r23zg29kw.jpg"]
+            var ims = [...img]
+            imag.map((e,i) => {
+                ims[i].style.backgroundImage = "url(" + e +")";
+            })
+        })()
+    </script>
+</body>
+</html>

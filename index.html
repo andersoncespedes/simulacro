@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <main>
+        <div class="login">
+            <div class="title-log">
+                <h2>LOGIN</h2>
+            </div>
+            <form action="home.html" method="GET">
+                <div class="form-g">
+                    <label for="">Usuario</label>
+                    <input type="text" name="user" placeholder="Usuario" >   
+                </div>
+                <div class="form-g">
+                    <label for="">Password</label>
+                    <input type="password" name="pas" id="" placeholder="Password">  
+                </div>
+                <div class="form-g">
+                    <input type="submit" value="ENTRAR">    
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+<script>
+    function solution(list){
+        let count = 0;
+        let arr = []
+        for(let i = 0; i < list.length; i++){
+          if(list[i + 1] - 1 != list[i] || count == 0){
+            if(count == 0 && list[i+2] == list[i] + 2){
+              arr.push(list[i]+"-")
+            }
+            else{
+              arr.push(list[i])
+            }
+            count= 0
+          }
+          if(list[i + 1] - 1 == list[i]){
+            count++
+          }
+        }
+        let far = []
+        for(let i =0; i < arr.length; i++){
+          if(typeof arr[i] === "string" && typeof arr[i + 1] === "number"){
+            far.push([arr[i], arr[i+1]].join(""))
+            i+=1
+          }
+          else{
+            far.push(arr[i])
+          }
+        }
+        return far.join(",")
+      }
+      console.log(solution([40,41,42,43,44,45,46,47,48,49,50,66,67,68,69,70,71,72,75,76,77,78,79]))
+</script>
+</html>
